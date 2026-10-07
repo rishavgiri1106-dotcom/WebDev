@@ -5,24 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning CSS</title>
     <style>
+        *{
+            background-color: rgb(235, 209, 209);
+        }
         p {
             color: green;
+            border: 3px solid rgb(151, 58, 58);
+        }
+
+        .box{
+            width: 200px;
+            height: 100px;
+            border: 2px solid black;
+            margin: 20px color; 
+            padding: 20px;
+            box-sizing: border-box;
+
         }
 
         #intro {
-            color: rgb(197, 146, 51);
+            color: rgb(253, 171, 18);
         }
 
         .note {
-            color: purple;
+            /* color: purple; */
+            background-color: rgb(85, 131, 149);
         }
+
+        div > p{
+            color:rgb(29, 7, 49)
+        }
+
     </style>
 </head>
 <body>
-    <h1>This is my Heading</h1>
-    <p id="intro" class="note" >This is my paragraph.</p>
+    <h1 class="box">This is my Heading</h1>
+    <p id="intro" class="note"  style="padding-top: 20px;">This is my paragraph.</p>
     <p>This is my second paragraph.</p>
     <p>This is my third paragraph.</p>
     <p style="color:blueviolet">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aliquam odit repellat eaque nisi soluta ratione accusantium ipsum, magnam officia a veniam nobis magni aut architecto quos. Quia, eaque nobis!</p>
+
+    <div>
+        <p>Child P</p>
+        <div>
+            <p>Child Div 2</p>
+            <strong><p>Strong P</p></strong>
+        </div>
+        <span><p>Span P</p></span>
+    </div>
+    <p>Just another paragraph</p>
 </body>
 </html>
