@@ -1,9 +1,11 @@
 .container {
   display: flex;
   background-color: rgb(159, 199, 239);
-  flex-direction: row-reverse;
+  flex-direction: column;
+  align-content: flex-start;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px;
+  height: 1000px;
 }
 
 .container div {
@@ -11,4 +13,5 @@
   margin: 10px;
   padding: 20px;
   font-size: 24px;
+  text-align: center;
 }
