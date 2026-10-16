@@ -1,8 +1,9 @@
 .container {
   display: flex;
   background-color: rgb(159, 199, 239);
-  flex-direction: column-reverse;
-  gap: 10px;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .container div {
